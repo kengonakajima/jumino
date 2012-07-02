@@ -1,5 +1,7 @@
+
 var assert = require("assert");
 require( "./jumino");
+
 
 assert(true);
 
@@ -14,3 +16,5 @@ assert(tostring(999.99)=="999.99");
 
 
 p("done");
+
+
