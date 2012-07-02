@@ -14,7 +14,7 @@ assert(tonumber("101.11")!=101.12);
 assert(to_s(999.99)=="999.99");
 assert(tostring(999.99)=="999.99");
 
-
+p(1,2,"3",{a:1,b:2});
 p("done");
 
 
