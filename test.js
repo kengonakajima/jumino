@@ -39,7 +39,11 @@ assert( ir2.minx==2 );
 assert( ir2.miny==2 );
 assert( ir2.maxy==3 );
 assert( ir2.maxy==3 );
+var ir3 = intersect(r,r3);
+assert(ir3==null);
 
+assert( area( rect(1,1,2,2) ) == (1*1) );
+assert( area( rect(2,2,1,1) ) == (1*1) );
         
 assert( min(1,2)==1);
 assert( min(2,1)==1);

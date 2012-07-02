@@ -58,3 +58,6 @@ intersect = function(r1,r2) {
     }
     return rect(iminx,iminy,imaxx,imaxy);
 }
+area = function(r) {
+    return (max(r.minx,r.maxx) - min(r.minx,r.maxx)) * (max(r.miny,r.maxy) - min(r.miny,r.maxy) );
+}
