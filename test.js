@@ -41,6 +41,12 @@ assert( ir2.maxy==3 );
 assert( ir2.maxy==3 );
 var ir3 = intersect(r,r3);
 assert(ir3==null);
+var r4 = rect(0,0,10,10)
+var ir4 = intersect(r,r4);
+assert(ir4.minx==1);
+assert(ir4.miny==1);
+assert(ir4.maxx==3);
+assert(ir4.maxy==3);
 
 assert( area( rect(1,1,2,2) ) == (1*1) );
 assert( area( rect(2,2,1,1) ) == (1*1) );

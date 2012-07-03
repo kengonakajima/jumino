@@ -44,17 +44,29 @@ intersect = function(r1,r2) {
     if(r1.minx<=r2.minx){
         iminx=r2.minx;
         imaxx=r1.maxx;
+        if(r1.maxx>=r2.maxx){
+            imaxx=r2.maxx;
+        }
     } else {
         iminx=r1.minx;
         imaxx=r2.maxx;
+        if(r1.maxx<=r2.maxx){
+            imaxx=r1.maxx;
+        }
     }
     var iminy, imaxy;
     if(r1.miny<=r2.miny){
         iminy=r2.miny;
         imaxy=r1.maxy;
+        if(r1.maxy>=r2.maxy){
+            imaxy=r2.maxy;
+        }
     } else {
         iminy=r1.miny;
         imaxy=r2.maxy;
+        if(r1.maxx<=r2.maxx){
+            imaxy=r1.maxy;
+        }
     }
     return rect(iminx,iminy,imaxx,imaxy);
 }
