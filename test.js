@@ -56,3 +56,7 @@ assert( min(2,1)==1);
 assert( max(2,1)==2);
 assert( max(1,2)==2);
 
+var t = now();
+p("now():",t);
+p("nowi():",nowi());
+

@@ -73,3 +73,11 @@ intersect = function(r1,r2) {
 area = function(r) {
     return (max(r.minx,r.maxx) - min(r.minx,r.maxx)) * (max(r.miny,r.maxy) - min(r.miny,r.maxy) );
 }
+
+now = function() {
+    var d = new Date();
+    return d.getTime();
+}
+nowi = function() {
+    return to_i(now()/1000.0);
+}
