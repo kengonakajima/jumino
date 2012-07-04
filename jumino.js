@@ -76,8 +76,8 @@ area = function(r) {
 
 now = function() {
     var d = new Date();
-    return d.getTime();
+    return d.getTime() / 1000.0;
 }
 nowi = function() {
-    return to_i(now()/1000.0);
+    return to_i(now());
 }
