@@ -60,3 +60,10 @@ var t = now();
 p("now():",t);
 p("nowi():",nowi());
 
+//
+var a = new Array(1,-30,20,5);
+var sa = numsort(a);
+assert(sa[0]==-30);
+assert(sa[1]==1);
+assert(sa[2]==5);
+assert(sa[3]==20);

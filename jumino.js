@@ -81,3 +81,7 @@ now = function() {
 nowi = function() {
     return to_i(now());
 }
+
+numsort = function(ary) {
+    return ary.sort(function(a,b){ return a-b; });
+}
