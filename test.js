@@ -67,3 +67,12 @@ assert(sa[0]==-30);
 assert(sa[1]==1);
 assert(sa[2]==5);
 assert(sa[3]==20);
+
+// types
+muststring( "hello" );
+mustnumber( 1.5 );
+mustobject( {a:1})
+mustthrow( function() { muststring(1);  });
+mustthrow( function() { mustnumber({a:1}); });
+mustthrow( function() { mustobject("aaa");  });
+    

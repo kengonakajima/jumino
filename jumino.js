@@ -1,3 +1,9 @@
+var assert = null;
+try {
+    assert = require("assert");
+} catch(e){
+    // in browser
+}
 
 to_i = function(s){ return parseInt(s);};
 int = function(s){ return parseInt(s);};
@@ -85,3 +91,33 @@ nowi = function() {
 numsort = function(ary) {
     return ary.sort(function(a,b){ return a-b; });
 }
+
+// asserts
+if(!assert){
+    assert = function(cond,msg) {
+        if(!cond) throw msg;
+    }
+}
+
+muststring = function(s) {
+    assert( typeof(s) == "string", "not a string: " + s );
+}
+mustnumber = function(n) {
+    assert( typeof(n) == "number", "not a number: " + n );
+}
+mustobject = function(o) {
+    assert( typeof(o) == "object", "not a object: " + o );
+}
+mustthrow = function(f){
+    var ng = false;
+    try {
+        f();
+        ng=true;
+    } catch(e) {
+        return;
+    }
+    throw "mustthrow: no exception catched";
+}
+
+    
+    
