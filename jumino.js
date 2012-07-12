@@ -125,4 +125,10 @@ mustthrow = function(f){
 }
 
     
-    
+function later(sec,f) {
+    setTimeout(f,sec*1000);
+}
+function every(sec,f) {
+    setInterval(f,sec*1000);
+}
+
