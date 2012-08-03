@@ -17,17 +17,17 @@ function argtoarray(a){ return [].slice.apply(a); }
 p = function(a,b,c,d,e,f,g,h,i,j,k){
     var code = "console.log(";
     var ary = [];
-    if(a){ ary.push("a"); }
-    if(b){ ary.push("b"); }
-    if(c){ ary.push("c"); }
-    if(d){ ary.push("d"); }
-    if(e){ ary.push("e"); }
-    if(f){ ary.push("f"); }
-    if(g){ ary.push("g"); }
-    if(h){ ary.push("h"); }
-    if(i){ ary.push("i"); }
-    if(j){ ary.push("j"); }
-    if(k){ ary.push("k"); }
+    if(a || a == 0 ){ ary.push("a"); }
+    if(b || b == 0 ){ ary.push("b"); }
+    if(c || c == 0 ){ ary.push("c"); }
+    if(d || d == 0 ){ ary.push("d"); }
+    if(e || e == 0 ){ ary.push("e"); }
+    if(f || f == 0 ){ ary.push("f"); }
+    if(g || g == 0 ){ ary.push("g"); }
+    if(h || h == 0 ){ ary.push("h"); }
+    if(i || i == 0 ){ ary.push("i"); }
+    if(j || j == 0 ){ ary.push("j"); }
+    if(k || k == 0 ){ ary.push("k"); }
     code += ary.join(",") + ")";
     eval(code);
 }
