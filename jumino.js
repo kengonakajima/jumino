@@ -80,6 +80,23 @@ area = function(r) {
     return (max(r.minx,r.maxx) - min(r.minx,r.maxx)) * (max(r.miny,r.maxy) - min(r.miny,r.maxy) );
 }
 
+// id
+var _globalCounterGen = 0;
+function generateNewId() {
+    _globalCounterGen ++;
+    return _globalCounterGen;
+}
+
+//
+function len(x0,y0,x1,y1) {
+    return Math.sqrt( (x0-x1)*(x0-x1) + (y0-y1)*(y0-y1) );
+}
+function range(a,b) {
+    return a + (b-a)*Math.random();
+}
+
+    
+// timer
 now = function() {
     var d = new Date();
     return d.getTime() / 1000.0;
