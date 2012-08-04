@@ -94,6 +94,9 @@ function len(x0,y0,x1,y1) {
 function range(a,b) {
     return a + (b-a)*Math.random();
 }
+function irange(a,b) {
+    return int( range( a,b ) );
+}
 
     
 // timer
@@ -149,3 +152,7 @@ function every(sec,f) {
     setInterval(f,sec*1000);
 }
 
+function choose(ary) {
+    var i = irange(0, ary.length );
+    return ary[i];
+}
