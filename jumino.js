@@ -1,3 +1,6 @@
+
+
+
 var assert = null;
 try {
     assert = require("assert");
@@ -155,4 +158,15 @@ function every(sec,f) {
 function choose(ary) {
     var i = irange(0, ary.length );
     return ary[i];
+}
+
+if(( typeof(GLOBAL) != "undefined" ) ) {
+    GLOBAL.print = print;
+    GLOBAL.range = range;
+    GLOBAL.irange = irange;
+    GLOBAL.max = max;
+    GLOBAL.min = min;
+    GLOBAL.now = now;
+    GLOBAL.nowi = nowi;
+    GLOBAL.nowms = nowms;
 }
