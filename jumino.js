@@ -169,4 +169,5 @@ if(( typeof(GLOBAL) != "undefined" ) ) {
     GLOBAL.now = now;
     GLOBAL.nowi = nowi;
     GLOBAL.nowms = nowms;
+    GLOBAL.assert = assert;
 }
