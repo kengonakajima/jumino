@@ -160,7 +160,7 @@ function choose(ary) {
     return ary[i];
 }
 
-if(( typeof(GLOBAL) != "undefined" ) ) {
+if(typeof(GLOBAL) != "undefined" ) {
     GLOBAL.print = print;
     GLOBAL.range = range;
     GLOBAL.irange = irange;
